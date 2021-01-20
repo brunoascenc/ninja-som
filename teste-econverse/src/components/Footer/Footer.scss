@@ -1,0 +1,159 @@
+@import "variables.scss";
+
+footer {
+  position: relative;
+  z-index: -1;
+  background-color: $blue;
+  padding: 45px 0 135px 0;
+  color: $primary-font-color;
+  // height: 30vh;
+
+  ul {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    list-style: none;
+
+    li {
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+  }
+
+  h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 75px;
+    width: 1160px;
+    margin: 0 auto;
+
+    .institucional {
+      display: flex;
+      flex-direction: column;
+
+      .about-footer {
+        margin-bottom: 20px;
+      }
+    }
+
+    .socials {
+      ul {
+        width: 75px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .payment {
+      .formas-pagamento {
+        ul {
+          margin-top: 5px;
+          display: grid;
+          grid-template-columns: repeat(3, 40px);
+        }
+      }
+    }
+    .seguranca {
+      ul {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .newsletter {
+      background: #ffffff;
+      color: $blue;
+      width: 276px;
+      height: 249px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+      margin-left: 25px;
+
+      h3 {
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 28px;
+        button {
+          align-self: flex-start;
+          cursor: pointer;
+          width: 110px;
+          height: 35px;
+          border: none;
+          background: transparent;
+          border: solid 1px $blue;
+          color: $blue;
+          font-size: 12px;
+          letter-spacing: 1px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          margin-top: 20px;
+        }
+
+        input {
+          border: none;
+          border-bottom: solid 1px $blue;
+          padding: 12px;
+
+          &::placeholder {
+            text-transform: uppercase;
+            color: $blue;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .more-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: $secondary-font-color;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 1160px;
+      margin: 0 auto;
+      padding: 16px 0 16px 0;
+
+      .logo {
+        margin-left: 300px;
+        img {
+          margin-right: 60px;
+        }
+      }
+    }
+
+    p {
+      font-size: 10px;
+      width: 507px;
+    }
+  }
+}

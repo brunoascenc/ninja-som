@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+.vitrine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // height: 100vh;
+  margin-top: 85px;
+  // margin-bottom: 400px;
+  h1 {
+    font-weight: 100;
+    font-size: 25px;
+    color: $blue;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $secondary-font-color;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 75px;
+    list-style: none;
+    margin-top: 100px;
+    width: 1160px;
+    li {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .product-name {
+        color: $blue;
+        font-size: 14;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+
+      .description {
+        text-align: center;
+        font-size: 10px;
+        color: $secondary-font-color;
+        letter-spacing: 1px;
+        width: 202px;
+      }
+
+      .price {
+        color: $blue;
+        font-size: 18;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  button{
+      cursor: pointer;
+      width: 155px;
+      height: 45px;
+      padding: 16px;
+      border: none;
+      background: transparent;
+      border: solid 1px $blue;
+      color: $blue;
+      font-size: 13px;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      margin-top: 60px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.sub-header {
+  background-color: $blue;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    color: $primary-font-color;
+    height: 37px;
+
+    li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:after {
+        content: "";
+        width: 1px;
+        height: 17px;
+        position: absolute;
+        right: -100px;
+        background-color: #c4c4c45b;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bold;
+      }
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+}

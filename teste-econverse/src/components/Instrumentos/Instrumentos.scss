@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+.opcoes-instrumentos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  height: 35vh;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-top: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      color: $blue;
+      opacity: 0.6;
+    }
+
+    img {
+      max-width: 55%;
+    }
+  }
+}

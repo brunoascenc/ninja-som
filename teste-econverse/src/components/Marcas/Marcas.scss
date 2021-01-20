@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.marcas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 50vh;
+  h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: $blue;
+    letter-spacing: 2px;
+    align-self: center;
+  }
+
+  p {
+    align-self: center;
+    color: #a5a5a5;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 35px;
+  }
+
+  .right-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 90px;
+  }
+}
