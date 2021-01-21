@@ -75,6 +75,12 @@
       width: 155px;
       font-size: 13px;
       text-transform: uppercase;
+      transition: 0.2s ease;
+
+      &:hover {
+        color: $secondary-font-color;
+        background: #ffffff;
+      }
     }
   }
 }

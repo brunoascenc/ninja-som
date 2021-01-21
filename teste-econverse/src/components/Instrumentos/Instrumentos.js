@@ -1,6 +1,6 @@
 import React from "react";
 import Microfone from "../../images/microfones.png";
-import Guitarras from '../../images/guitarras.png'
+import Guitarras from "../../images/guitarras.png";
 import Mesa from "../../images/mesadesom.png";
 import Teclados from "../../images/teclados.png";
 import Violao from "../../images/violao.png";

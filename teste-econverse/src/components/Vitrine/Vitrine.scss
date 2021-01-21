@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // height: 100vh;
   margin-top: 85px;
-  // margin-bottom: 400px;
   h1 {
     font-weight: 100;
     font-size: 25px;
@@ -20,17 +18,95 @@
     font-size: 16px;
   }
 
+  .info {
+    height: 25px;
+  }
+
   ul {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     row-gap: 75px;
+    column-gap: 40px;
     list-style: none;
     margin-top: 100px;
-    width: 1160px;
     li {
       display: flex;
       align-items: center;
       flex-direction: column;
+      cursor: pointer;
+      width: 216px;
+      padding: 16px;
+      border-radius: 3px;
+
+      div {
+        position: relative;
+
+        .quick-view {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          bottom: 0;
+          left: 58px;
+          opacity: 0;
+          transition: 0.3s ease;
+          img {
+            background: $blue;
+            width: 30px;
+            padding: 7px;
+            border-radius: 60px;
+            box-shadow: 3px 3px 10px 2px rgba(65, 63, 63, 0.26);
+          }
+          p {
+            font-size: 10px;
+            color: $blue;
+            margin-top: -8px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+
+      .product-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .layer {
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+
+      img {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        transition: top 0.2s ease-in-out;
+      }
+
+      &:hover {
+        box-shadow: 3px 3px 10px 2px rgba(65, 63, 63, 0.123);
+        .layer {
+          background-image: linear-gradient(
+            to bottom,
+            rgba(255, 0, 0, 0),
+            #fffffff6
+          );
+        }
+
+        .quick-view {
+          opacity: 1;
+        }
+
+        img {
+          top: -15px;
+        }
+      }
 
       .product-name {
         color: $blue;
@@ -56,19 +132,110 @@
     }
   }
 
-  button{
-      cursor: pointer;
-      width: 155px;
-      height: 45px;
-      padding: 16px;
-      border: none;
-      background: transparent;
-      border: solid 1px $blue;
+  button {
+    cursor: pointer;
+    width: 155px;
+    height: 45px;
+    padding: 16px;
+    border: none;
+    background: transparent;
+    border: solid 1px $blue;
+    color: $blue;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 60px;
+    transition: 0.2 ease;
+
+    &:hover {
+      background-color: $blue;
+      color: #ffffff;
+    }
+  }
+}
+
+.modal {
+  width: 770px;
+  height: 353px;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 6px;
+  font-family: "Fjalla One", sans-serif;
+  top: 50%;
+  outline: none;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  color: rgb(43, 41, 41);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  .info {
+    .product-name {
       color: $blue;
-      font-size: 13px;
+      font-size: 20;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .product-price {
+      color: $blue;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+    }
+
+    .description {
+      font-size: 10px;
+      color: $secondary-font-color;
       letter-spacing: 1px;
-      border-radius: 5px;
-      text-transform: uppercase;
-      margin-top: 60px;
+      margin-top: 20px;
+      width: 322px;
+    }
+
+    .more-details {
+      position: relative;
+      font-size: 12px;
+      letter-spacing: 2px;
+      padding: 0 0 2px 0;
+      margin-top: 20px;
+      width: 220px;
+      color: $blue;
+      border-bottom: solid 1px $blue;
+
+      &:after {
+        content: url("../../icons/more.png");
+        position: absolute;
+        right: -11px;
+        top: 3px;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      background: $blue;
+      color: #ffffff;
+      margin-top: 20px;
+      border: none;
+      padding: 16px 24px 16px 24px;
+      border-radius: 3px;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
   }
 }

@@ -9,3 +9,15 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+
+input,
+button{
+  &:focus{
+    outline: none;
+  }
+}
+
+
+.container{
+  width: 1160px;
+}

@@ -16,12 +16,21 @@ nav {
     li {
       cursor: pointer;
       margin-right: 7.5rem;
+
       p {
         color: $blue;
         font-weight: bold;
         font-size: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
+        padding-top: 17px;
+        padding-bottom: 15px;
+        border-bottom: solid 3px transparent;
+        transition: 0.3s ease;
+
+        &:hover {
+          border-bottom: solid 3px $blue;
+        }
       }
 
       &:nth-child(2),

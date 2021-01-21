@@ -7,10 +7,12 @@ const HomeSlider = () => {
   return (
     <article className="slider">
       <div className="slider-txt">
-        <p>Novos produtos</p>
-        <h1>Instrumentos</h1>
-        <p>profissionais</p>
-        <button>Confira</button>
+        <div>
+          <p>Novos produtos</p>
+          <h1>Instrumentos</h1>
+          <p>profissionais</p>
+          <button>Confira</button>
+        </div>
       </div>
 
       <img className="left-arrow" src={LeftArrow} alt="left-arrow" />
