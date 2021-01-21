@@ -1,6 +1,6 @@
 ## Ninja Som
 
-Desenvolvimento do layout para um teste na #Econverse.
+Desenvolvimento do layout para um teste da #Econverse.
 
 * URL: (https://movixmovies.netlify.app/)
 
