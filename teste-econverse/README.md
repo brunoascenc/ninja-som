@@ -2,7 +2,7 @@
 
 Desenvolvimento do layout para um teste da #Econverse.
 
-* URL: (https://movixmovies.netlify.app/)
+* URL: (https://ninja-somdskt.netlify.app/)
 
 ## Instalação e configuração.
 
